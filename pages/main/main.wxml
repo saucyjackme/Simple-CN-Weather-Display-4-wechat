@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="today">
+    <view class="info">
+      <view class="temp">{{today.tem}}</view>
+      <view class="weather">{{today.wea}}</view>
+      <view class="tip">友情提示：{{today.air_tips}}</view>
+      <view class="city">{{city}}</view>
+    </view>
+  </view>
+  <!-- <view class="lifeTitle">生活指数</view> -->
+  <import src="../template/itemtpl"/>
+  <view class="future">
+    <block wx:for="{{future}}" wx:key="key">
+      <template is="futureItem" data="{{item}}"></template>
+    </block>
+  </view>
+</view> 

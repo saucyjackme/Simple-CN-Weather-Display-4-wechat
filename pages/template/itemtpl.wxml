@@ -1,0 +1,8 @@
+<template name="futureItem">
+  <view class="futureItem" style="display:flex;flex-direction:row">
+    <!-- <view>{{index}}{{item.week}} {{item.wea}} {{item.tem2}}-{{item.tem1}}</view> -->
+    <view style="margin-left:80rpx">{{index}}{{item.week}}</view>
+    <view style="flex:1">{{item.wea}}</view>
+    <view style="margin-right:80rpx">{{item.tem2}}-{{item.tem1}}</view>
+  </view>
+</template>
